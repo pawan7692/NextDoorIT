@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Api\Auth\RegistrationController as UserRegistrationController;
+use App\Http\Controllers\Api\ServicesController as UserServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ use App\Http\Controllers\Api\Auth\RegistrationController as UserRegistrationCont
 // });
 
 Route::post('register', [UserRegistrationController::class, 'register']);
+Route::post('service', [UserServiceController::class, 'registerServiceRequest']);
