@@ -3,15 +3,11 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class AuthenticationTest extends TestCase
 {
-
-	use RefreshDatabase;
-    
     /**
-     * A basic test example.
+     * A basic unit test example.
      *
      * @return void
      */
