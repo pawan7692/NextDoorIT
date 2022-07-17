@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 class ServiceTypesTest extends TestCase
 {
     //Define hooks to migrate the database before and after each test.
-    use DatabaseMigrations;
+    //use DatabaseMigrations;
 
     /**
      * A basic feature test example.

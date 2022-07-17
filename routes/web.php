@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\User\HomeController as UserHomeController;
 use App\Http\Controllers\User\Auth\RegistrationController as UserRegistrationController;
 use App\Http\Controllers\User\Auth\LoginController as UserLoginController;
 
@@ -22,9 +23,11 @@ use App\Http\Controllers\Admin\ServicesController as AdminServiceController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get("/", [UserHomeController::class, 'showHomePage'])->name('user.home');
 
 Route::get("register", [UserRegistrationController::class, 'showUserRegister'])->name('user.register');
 Route::post("register",[UserRegistrationController::class, 'userRegister'])->name('user.register');
