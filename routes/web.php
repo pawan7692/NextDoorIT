@@ -12,6 +12,10 @@ use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\ServiceTypesController as AdminServiceTypesController;
 use App\Http\Controllers\Admin\ServicesController as AdminServiceController;
 
+use App\Http\Controllers\Admin\CategoriesController as AdminCategoriesController;
+use App\Http\Controllers\Admin\TagsController as AdminTagsController;
+use App\Http\Controllers\Admin\PostsController as AdminPostsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +50,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::resource('/service', AdminServiceController::class);
 	Route::post("service/update-status/{service}",[AdminServiceController::class, 'updateStatus'])->name('service.update-status');
 
+	Route::resource('/categories', AdminCategoriesController::class);
+	Route::resource('/tags', AdminTagsController::class);
+	Route::resource('/posts', AdminPostsController::class);
+	
 
 	
 });

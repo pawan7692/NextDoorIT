@@ -50,15 +50,10 @@ class AuthenticationTest extends TestCase
     public function test_user_can_login_using_the_login_form() {
 
         $user = User::factory()->create();
-        //dd($user->email);
-
+        
         $response = $this->post('/login', ['email' => $user->email, 'password' => 'password']);
 
         $response->assertStatus(200);
-
-       // $this->assertDatabaseHas('users', $user);
-
-       // $this->assertAuthenticated($user);
 
     }
 }

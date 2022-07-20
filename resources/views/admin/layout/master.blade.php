@@ -100,6 +100,28 @@
 						</a>
 					</li>
 					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
+					<li>
+						<div class="text-muted small fw-bold text-uppercase px-3">News & Blog</div>
+					</li>
+					<li>
+						<a href="{{route('admin.categories.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Categories</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{route('admin.tags.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Tags</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{route('admin.posts.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Posts</span>
+						</a>
+					</li>
+					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
 
 
 				</ul>
