@@ -175,6 +175,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        * Composer Custom Service Providers...
+        */
+        Spatie\Permission\PermissionServiceProvider::class,
+
     ],
 
     /*

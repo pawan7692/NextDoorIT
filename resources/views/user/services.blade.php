@@ -37,8 +37,9 @@
 		<label for="serviceType">Service Types</label>
 		<select class="form-control" name="service_type">
 			<option selected="selected" disabled="disabled">--Select Service Type--</option>
-			<option value="broadband-service">BroadBand Service</option>
-			<option value="computer-repair">Computer Repair</option>
+			@foreach($serviceTypes as $serviceType)
+				<option value="{{$serviceType->slug}}">{{$serviceType->title}}</option>
+			@endforeach
 
 		</select>
 	</div><br/>

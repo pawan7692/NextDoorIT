@@ -24,31 +24,30 @@
 </head>
 
 <header>
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0d1b2a">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: #778DA9">NextDoorIT</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: #415a77">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #415a77"><b>Services</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #415a77"><b>Shopping</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #415a77"><b>Blog</b></a>
-        </li>
-        
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0d1b2a">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand" style="color: #778DA9">NextDoorIT</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="{{route('user.home')}}" class="nav-item nav-link active" style="color: #177e89; font-weight: bold;">Home</a>
+                <a href="{{route('user.service')}}" class="nav-item nav-link" style="color: #177e89; font-weight: bold;">Services</a>
+                <a href="{{route('user.products')}}" class="nav-item nav-link" style="color: #177e89; font-weight: bold;">Shopping</a>
+                <a href="{{route('user.posts')}}" class="nav-item nav-link" style="color: #177e89; font-weight: bold;">Blog</a>
+                <a href="{{route('user.member-discounts')}}" class="nav-item nav-link" style="color: #177e89; font-weight: bold;">Member Discounts</a>
+                <a href="{{route('user.member-discounts')}}" class="nav-item nav-link" style="color: #177e89; font-weight: bold;">Mobile & Web Apps</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a href="{{route('user.login')}}" class="nav-item nav-link" style="color: #95b8d1; font-weight: bold;">Login</a>
+                <a href="{{route('user.register')}}" class="nav-item nav-link" style="color: #95b8d1; font-weight: bold;">Register</a>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
+
+	
 </header>
 <body style="background-color: #E0E1DD;">
 	<div class="container">

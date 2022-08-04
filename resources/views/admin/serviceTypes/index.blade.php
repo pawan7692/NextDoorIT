@@ -53,5 +53,5 @@
 
 <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-<script src="{{asset('admin/js/serviceTypes.js')}}"></script>
+<script src="{{asset('admin/js/custom/serviceTypes.js')}}"></script>
 @endsection

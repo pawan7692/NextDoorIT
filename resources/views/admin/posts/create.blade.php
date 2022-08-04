@@ -27,8 +27,8 @@
 			</div>
 
 			<div class="form-group mb-3">
-			  <label for="formFile" class="form-label">Default file input example</label>
-			  <input class="form-control" type="file" id="postBanner" name="post_banner">
+			  <label for="formFile" class="form-label">Post Banner</label>
+			  <input class="form-control" type="file" id="imageUpload" name="post_banner">
 			  <img id="previewImg" src="#" height="300" class="mt-3">
 			</div>
 			

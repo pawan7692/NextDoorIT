@@ -75,7 +75,7 @@ class PostsController extends Controller
                 $post->slug = Str::slug($request->post_title); 
                 $post->category_id = $request->post_category; 
                 $post->description = $request->post_description;             
-                $post->status = $request->category_status?1:0;
+                $post->status = $request->post_status?1:0;
 
                 if($file= $request->file('post_banner')) {
 

@@ -18,7 +18,8 @@ class ServicesController extends Controller
     //
     public function showServiceForm()
     {
-    	return view('user.services');
+        $serviceTypes = ServiceType::where('status', 1)->get();
+    	return view('user.services', compact('serviceTypes'));
     }
 
     public function registerServiceRequest(Request $request) {

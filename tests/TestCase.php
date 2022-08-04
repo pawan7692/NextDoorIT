@@ -22,6 +22,6 @@ abstract class TestCase extends BaseTestCase
     	//Here second argument is the guard to decide with type of user to authenticate
     	$this->actingAs($admin, 'admin');
 
-    	return $this;
+    	return $admin;
     }
 }

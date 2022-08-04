@@ -2,9 +2,9 @@
 
 @section('head-section')
 <style>
+
 section {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
 }
 
 section h1 {
@@ -43,8 +43,8 @@ button {
 }
 
 .icon {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 70px;
 }
 
 #customer-reviews .user-photo {
@@ -58,16 +58,45 @@ button {
 @endsection
 @section('main-content')
 
-<section>
+<section id="carousel-imgs">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{asset('user/img/carousel-img1.jpg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('user/img/carousel-img2.jpg')}}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{asset('user/img/carousel-img3.jpg')}}" class="d-block w-100" alt="..." style="height: 700px;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<section id="about-us">
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h1>NextDoorIT</h1>
-				<p>MyMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy WebsiteMy Website Website</p>
+				<h1>About Us</h1>
+				<p>We are a statup company to provide IT Related Solutions. We operates thorugh online portal. Our business model is to bringing IT products and services to the proximity of customers.</p>
 				<button type="button" class="btn btn-dark btn-large">Learn More</button>
 			</div>
 			<div class="col img-col">
-				<img src="{{asset('user/img/section1.jpg')}}" class="img-fluid" />
+				<img src="{{asset('user/img/about-us.jpg')}}" class="img-fluid" style="margin-bottom: 20px;" />
 			</div>
 		</div>
 
@@ -76,31 +105,68 @@ button {
 			<div class="col-md-4 flex justify-content-center">
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
-						<img src="{{asset('user/img/section1.jpg')}}" class="icon" />
-						<h5 class="card-title">Web Dev</h5>
-						<p class="card-text">asdasdsad asd asd as dsa das das d asd sad as d asd.</p>
+						<img src="{{asset('user/img/vision.jpeg')}}" class="icon" />
+						<h5 class="card-title">Visison</h5>
+						<p class="card-text">Solve all your IT solutions in rapid time so that your  work never stops.</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 flex justify-content-center">
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
-						<img src="{{asset('user/img/section1.jpg')}}" class="icon" />
-						<h5 class="card-title">Web Dev</h5>
-						<p class="card-text">asdasdsad asd asd as dsa das das d asd sad as d asd.</p>
+						<img src="{{asset('user/img/mission.png')}}" class="icon" />
+						<h5 class="card-title">Mission</h5>
+						<p class="card-text">To transform this technical era by providing quick IT assistance through an online place where you get collective services at one place.</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 flex justify-content-center">
 				<div class="card" style="width: 18rem;">
 					<div class="card-body">
-						<img src="{{asset('user/img/section1.jpg')}}" class="icon" />
-						<h5 class="card-title">Web Dev</h5>
-						<p class="card-text">asdasdsad asd asd as dsa das das d asd sad as d asd.</p>
+						<img src="{{asset('user/img/values.png')}}" class="icon" />
+						<h5 class="card-title">Values</h5>
+						<p class="card-text">Cost Effective​, Time Efficient​, Reilable​, Secure​, Evolutionary​, Integrity​.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section>
+		<div class="container shadow mt-5 border">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end border-bottom py-5 px-3">
+            <i class="bi bi-people text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Computer Repair</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end border-bottom py-5 px-3">
+            <i class="bi bi-images text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Ecommerce Store</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-bottom py-5 px-3">
+            <i class="bi bi-shop text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Member Discounts</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end py-5 px-3">
+            <i class="bi bi-pencil-square text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Blog</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center border-end py-5 px-3">
+            <i class="bi bi-briefcase text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">Remote Troubleshoting</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col-md-4 col-sm-6 bg-light text-center py-5 px-3">
+            <i class="bi bi-book text-danger fs-1"></i>
+            <h4 class="mb-3 fw-normal text-uppercase">E-Learning</h4>
+            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+    </div>
+</div>
 	</section>
 
 	<section id="customer-reviews" class="bg-danger py-5">

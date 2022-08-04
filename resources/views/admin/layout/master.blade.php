@@ -93,10 +93,20 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
+					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
 					<li>
-						<a href="#" class="nav-link px-3 active">
+						<div class="text-muted small fw-bold text-uppercase px-3">Services</div>
+					</li>
+					<li>
+						<a href="{{route('admin.service-type.index')}}" class="nav-link px-3 active">
 							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
-							<span>Services</span>
+							<span>Service Types</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{route('admin.service.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Service</span>
 						</a>
 					</li>
 					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
@@ -122,8 +132,48 @@
 						</a>
 					</li>
 					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
-
-
+					<li>
+						<div class="text-muted small fw-bold text-uppercase px-3">Store</div>
+					</li>
+					<li>
+						<a href="{{route('admin.brands.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Brands</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{route('admin.tags.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Products</span>
+						</a>
+					</li>
+					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
+					<li>
+						<div class="text-muted small fw-bold text-uppercase px-3">Roles</div>
+					</li>
+					<li>
+						<a href="{{route('admin.brands.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Assign Roles</span>
+						</a>
+					</li>
+					<li class="my-4"><hr class="dropdown-divider bg-light"></li>
+					<li>
+						<div class="text-muted small fw-bold text-uppercase px-3">Member Discounts</div>
+					</li>
+					<li>
+						<a href="{{route('admin.member-discounts.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Discounts</span>
+						</a>
+					</li>
+					<li>
+						<a href="{{route('admin.member-discount-features.index')}}" class="nav-link px-3 active">
+							<span class="me-2"><i class="bi bi-speedometer-2"></i></span>
+							<span>Features</span>
+						</a>
+					</li>
+					
 				</ul>
 			</nav>
 
@@ -138,7 +188,7 @@
 </body>
 
 <footer>
-	
+	<script type="text/javascript" src="{{asset('admin/js/custom/common.js')}}"></script>
 	@yield('footer-section')
 </footer>
 </html>
